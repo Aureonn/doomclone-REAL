@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/testlevelforDoom.glb-8e586d7751279033637624743c24b564.scn"
+path="res://.import/testlevelforDoom.glb-bca218d0d844b54da3b99415a8a69b93.scn"
 
 [deps]
 
-source_file="res://blender  import/testlevelforDoom.glb"
-dest_files=[ "res://.import/testlevelforDoom.glb-8e586d7751279033637624743c24b564.scn" ]
+source_file="res://Sprite/Deagle/blender  import/testlevelforDoom.glb"
+dest_files=[ "res://.import/testlevelforDoom.glb-bca218d0d844b54da3b99415a8a69b93.scn" ]
 
 [params]
 

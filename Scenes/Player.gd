@@ -25,7 +25,10 @@ func get_input():
 	return input_dir
 	
 func _unhandled_input(event):
-	pass
+	if event is InputEventMouseMotion:
+		rotate_y(-event.relative.x * mouse_sensitivity)
+		$Pivot.rotate_x(-event.relative.y * mouse_sensitivity)
+		$Pivot.rotation.x = clamp ($Pivot.rotation.x, -1.2, 1.2)
 	
 func _physics_process(delta):
 	velocity.y += gravity * delta
