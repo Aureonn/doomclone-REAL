@@ -6,6 +6,7 @@
 [node name="World" type="Spatial"]
 
 [node name="testlevelforDoom" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.13583, -2.56637, -0.666013 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.368376, 0 )
