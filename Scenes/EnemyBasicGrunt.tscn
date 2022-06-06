@@ -46,6 +46,11 @@ animations = [ {
 "name": "hit",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 18 ) ],
 "loop": false,
 "name": "explode",
@@ -55,14 +60,10 @@ animations = [ {
 "loop": true,
 "name": "shoot",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
 } ]
 
 [node name="EnemyBasicGrunt" type="KinematicBody"]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, -0.781328, 0 )
 script = ExtResource( 25 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]

@@ -7,10 +7,10 @@
 [node name="World" type="Spatial"]
 
 [node name="testlevelforDoom" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.13583, -2.56637, -0.666013 )
+transform = Transform( 1, 0, 0, 0, 0.5, 0, 0, 0, 1, -4.136, -2.566, -0.666 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, -1.88607, 0 )
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, -2.18789, 0 )
 
 [node name="EnemyBasicGrunt" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.49662, -2.1364 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.916779, -2.1364 )
