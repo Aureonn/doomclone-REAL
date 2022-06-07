@@ -36,16 +36,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "die",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "hit",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "walk",
@@ -56,14 +46,23 @@ animations = [ {
 "name": "explode",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 10 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "hit",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "shoot",
 "speed": 5.0
 } ]
 
-[node name="EnemyBasicGrunt" type="KinematicBody"]
-transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, -0.781328, 0 )
+[node name="EnemyBasicGrunt" type="KinematicBody" groups=["Enemy"]]
 script = ExtResource( 25 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
@@ -78,7 +77,6 @@ billboard = 2
 double_sided = false
 frames = SubResource( 2 )
 animation = "walk"
-frame = 2
 playing = true
 
 [node name="RayCast" type="RayCast" parent="."]
