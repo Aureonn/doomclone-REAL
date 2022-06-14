@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsdbopn.ogg-53ff3eec86104cf3e5bee651a001f6f2.oggstr"
+
+[deps]
+
+source_file="res://Sprite/Doom3SSG/sounds/dsdbopn.ogg"
+dest_files=[ "res://.import/dsdbopn.ogg-53ff3eec86104cf3e5bee651a001f6f2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

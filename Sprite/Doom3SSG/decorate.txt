@@ -1,0 +1,34 @@
+ACTOR Doom2.5SSG : SuperShotgun Replaces SuperShotgun
+{
+   Decal "BulletChip"
+   States
+   {
+   Ready:
+      SSG3 A 1 A_WeaponReady
+      Loop
+   Select:
+      SSG3 A 1 A_Raise
+      Loop
+   Deselect:
+      SSG3 A 1 A_Lower
+      Loop
+   Fire:
+      SSG3 K 4 Bright A_FireShotgun2
+      SSG3 L 4
+      SSG3 A 4 A_CheckReload
+      SSG3 B 4
+      SSG3 C 4 A_OpenShotgun2
+      SSG3 D 16
+      SSG3 EFG 2
+      SSG3 H 4 A_LoadShotgun2
+      SSG3 D 5
+      SSG3 I 4 A_CloseShotgun2
+      SSG3 A 5
+      Goto Ready
+   Flash:
+      TNT1 A 1 A_Light1
+      TNT1 A 1 A_Light2
+      TNT1 A 1 A_Light0
+      Stop
+   }
+}

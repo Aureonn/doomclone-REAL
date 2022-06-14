@@ -6,6 +6,10 @@ var gravity = -30
 var max_speed = 8
 var mouse_sensitivity = 0.002
 
+onready var pistol = preload("res://scenes/PISTOL.tscn")
+onready var shotgun = preload ("res://scenes/SHOTGUN.tscn")
+var current_gun = 0
+onready var carried_guns = [pistol, shotgun]
 
 #funcition
 func _ready():
@@ -38,7 +42,9 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector3.UP, true)
 	
 func change_gun(gun):
-	pass
+	if Input.is_action_just_pressed("next_gun")
+		pass
+		
 func _process(delta):
 	pass
 	

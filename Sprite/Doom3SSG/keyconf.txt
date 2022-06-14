@@ -1,0 +1,2 @@
+WeaponSection Doom3
+SetSlot 3 Shotgun Doom2.5SSG
