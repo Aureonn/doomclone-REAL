@@ -1,11 +1,11 @@
-extends Spatial
+	extends Spatial
 
 onready var gun_sprite = $CanvasLayer/Control/GunSprite
 onready var gun_rays = $GunRays.get_children()
 onready var flash = preload("res://Scenes/MuzzleFlash.tscn")
 onready var blood = preload("res://Scenes/Blood.tscn")
 
-var damage = 5
+var damage = 4
 var can_shoot = true
 
 
@@ -21,7 +21,7 @@ func check_hit():
 				print("adding blood")
 				get_node("/root/World").add_child(new_blood)
 				new_blood.global_transform.origin = ray.get_collision_point()
-				new_blood.emitting = true
+				new_blood.emitting = true	
 	
 func make_flash():
 	var f = flash.instance()
@@ -42,3 +42,6 @@ func _process(delta):
 
 func _on_Timer_timeout():
 	can_shoot = true
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"

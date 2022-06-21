@@ -1,28 +1,26 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Sprite/Deagle/deggc0.png" type="Texture" id=1]
-[ext_resource path="res://Sprite/Deagle/deggd0.png" type="Texture" id=2]
-[ext_resource path="res://Sprite/Deagle/degga0.png" type="Texture" id=3]
-[ext_resource path="res://Sprite/Deagle/degfa0.png" type="Texture" id=4]
-[ext_resource path="res://Sprite/Deagle/degfb0.png" type="Texture" id=5]
-[ext_resource path="res://Sprite/Deagle/degge0.png" type="Texture" id=6]
-[ext_resource path="res://Scenes/PISTOL.gd" type="Script" id=7]
+[ext_resource path="res://Sprite/AK47 (1)/AK47/SPRITES/ak4fb0.png" type="Texture" id=1]
+[ext_resource path="res://Sprite/AK47 (1)/AK47/SPRITES/ak4fa0.png" type="Texture" id=2]
+[ext_resource path="res://Sprite/AK47 (1)/AK47/SPRITES/ak47a0.png" type="Texture" id=3]
+[ext_resource path="res://Sprite/AK47 (1)/AK47/SPRITES/ak47b0.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/ak47.gd" type="Script" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "idle",
 "speed": 100.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "shoot",
-"speed": 16.0
+"speed": 13.0
 } ]
 
-[node name="piss tol" type="Spatial"]
-script = ExtResource( 7 )
+[node name="ak" type="Spatial"]
+script = ExtResource( 5 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -40,7 +38,7 @@ rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "shoot"
-frame = 4
+frame = 2
 playing = true
 centered = false
 flip_h = true
@@ -50,10 +48,10 @@ flip_v = true
 
 [node name="RayCast" type="RayCast" parent="GunRays"]
 enabled = true
-cast_to = Vector3( 0, 0, -35 )
+cast_to = Vector3( 0, 0, -45 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.147
+wait_time = 0.215
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

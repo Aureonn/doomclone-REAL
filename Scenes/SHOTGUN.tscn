@@ -6,7 +6,7 @@
 [ext_resource path="res://Sprite/Doom3SSG/SPRITES/ssg3g0.png" type="Texture" id=4]
 [ext_resource path="res://Sprite/Doom3SSG/SPRITES/ssg3i0.png" type="Texture" id=5]
 [ext_resource path="res://Sprite/Doom3SSG/SPRITES/ssg3a0.png" type="Texture" id=6]
-[ext_resource path="res://Scenes/GunDefault.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/SHOTGUN.gd" type="Script" id=7]
 [ext_resource path="res://Sprite/Doom3SSG/SPRITES/ssg3l0.png" type="Texture" id=8]
 [ext_resource path="res://Sprite/Doom3SSG/SPRITES/ssg3h0.png" type="Texture" id=9]
 [ext_resource path="res://Sprite/Doom3SSG/SPRITES/ssg3f0.png" type="Texture" id=10]
@@ -45,12 +45,12 @@ margin_left = -40.0
 margin_top = -40.0
 
 [node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
-position = Vector2( -170, 37 )
+position = Vector2( -170, 43 )
 rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "reload"
-frame = 1
+frame = 13
 playing = true
 centered = false
 flip_h = true
@@ -97,3 +97,7 @@ cast_to = Vector3( 0, 0, -10 )
 transform = Transform( 0.999816, -0.000770428, -0.019182, 0, 0.999194, -0.0401318, 0.0191974, 0.0401244, 0.99901, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -15 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

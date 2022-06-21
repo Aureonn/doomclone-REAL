@@ -5,7 +5,7 @@ onready var gun_rays = $GunRays.get_children()
 onready var flash = preload("res://Scenes/MuzzleFlash.tscn")
 onready var blood = preload("res://Scenes/Blood.tscn")
 
-var damage = 5
+var damage = 7
 var can_shoot = true
 
 
