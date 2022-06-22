@@ -1,0 +1,11 @@
+Name: Grenade Launcher (KDiZD)
+Class: 6
+Type: Projectile
+Palette: Custom
+Summon: KDIZDGrenadeLauncher
+Ammo Type: RocketAmmo
+Altfire: No
+Powered Mode: No
+Brightmaps: No
+Actor modification: No
+ACS: No

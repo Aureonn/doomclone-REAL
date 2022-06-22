@@ -1,0 +1,4 @@
+Code: TheDarkArchon, Ghastly (ZScript conversion)
+GLDefs: Ghastly
+Sounds: Valve Software, FreeDoom
+Sprites: Nmn

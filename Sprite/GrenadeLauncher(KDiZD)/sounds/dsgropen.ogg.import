@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsgropen.ogg-41d8e8087cb0e92d875eb07603aa40fe.oggstr"
+
+[deps]
+
+source_file="res://Sprite/GrenadeLauncher(KDiZD)/sounds/dsgropen.ogg"
+dest_files=[ "res://.import/dsgropen.ogg-41d8e8087cb0e92d875eb07603aa40fe.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

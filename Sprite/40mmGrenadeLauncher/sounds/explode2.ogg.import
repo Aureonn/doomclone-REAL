@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/explode2.ogg-3ae48429b5c07f91e71af12b0ccf967c.oggstr"
+
+[deps]
+
+source_file="res://Sprite/40mmGrenadeLauncher/sounds/explode2.ogg"
+dest_files=[ "res://.import/explode2.ogg-3ae48429b5c07f91e71af12b0ccf967c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

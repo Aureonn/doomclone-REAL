@@ -1,0 +1,102 @@
+Class KDiZDGrenadeLauncher : Weapon
+{
+  Default
+  {
+    Weapon.AmmoType "RocketAmmo";
+    Weapon.AmmoGive 2;
+    Weapon.AmmoUse 1;
+    Weapon.AmmoType2 "RocketAmmo";
+    Weapon.AmmoUse2 1;
+    Inventory.PickupMessage "You got the Grenade Launcher!";
+    Inventory.PickupSound "Misc/W_PkUp";
+    Weapon.SelectionOrder 2600;
+    Weapon.Kickback 600;
+  }
+
+  States
+  {
+  Spawn:
+    GLAU A -1;
+    Loop;
+  Select:
+    GLAG A 1 A_Raise();
+    Loop;
+  Deselect:
+    GLAG A 1 A_Lower();
+    Loop;
+  Ready:
+    GLAG A 1 A_WeaponReady();
+    Loop;
+  Fire:
+    GLAG B 0 Bright A_GunFlash();
+    GLAG B 0 Bright A_PlaySound("Weapons/GrenadeFire");
+    GLAG B 4 Bright A_FireProjectile("KDiZDGrenade", 0, 1, 0, 0);
+    GLAG I 4;
+    GLAG A 0 A_CheckReload();
+    GLAG C 7;
+    GLAG D 5;
+    GLAG E 5 A_PlaySound("Weapons/GrenadeOpen");
+    GLAG FG 5;
+    GLAG H 5 A_PlaySound("Weapons/GrenadeLoad");
+    GLAG FE 5;
+    GLAG D 5 A_PlaySound("Weapons/GrenadeClose");
+    GLAG A 3;
+    GLAG A 0 A_Refire();
+    Goto Ready;
+  Flash:
+    TNT1 A 2 A_Light1();
+    TNT1 A 2 A_Light2();
+    TNT1 A 0 A_Light0();
+    Stop;
+  }
+}
+
+Class KDiZDGrenade : Actor
+{
+  Default
+  {
+    Radius 11;
+    Height 8;
+    Speed 35;
+    DamageFunction (15*random(1,16));
+    BounceFactor 0.8;
+    BounceCount 6;
+    ReactionTime 139;
+    Seesound "Weapons/GrenadeBounce";
+    Deathsound "Weapons/RockLX";
+    PROJECTILE;
+    +HEXENBOUNCE
+    -NOGRAVITY
+    +EXPLODEONWATER
+  }
+
+  States
+  {
+  Spawn:
+    GRND A 0 A_CountDown();
+    GRND A 1 A_SpawnProjectile("GrenadePuff", 3, 0, 0, CMF_AIMOFFSET);
+    Loop;
+  Death:
+    MISL B 0 Bright A_NoGravity();
+    MISL B 0 Bright A_SetTranslucent(0.5, 1);
+    MISL B 8 Bright A_Explode(256, 160, 1);
+    MISL C 6 Bright;
+    MISL D 4 BRIGHT;
+    Stop;
+  }
+}
+
+Class GrenadePuff : BulletPuff
+{
+  Default
+  {
+    +ClientSideOnly
+  }
+
+  States
+  {
+  Spawn:
+    PUFF ABCD 4;
+    Stop;
+  }
+}

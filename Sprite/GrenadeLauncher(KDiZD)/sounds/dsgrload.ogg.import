@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsgrload.ogg-089163354e23c40f69b940bf4108cc79.oggstr"
+
+[deps]
+
+source_file="res://Sprite/GrenadeLauncher(KDiZD)/sounds/dsgrload.ogg"
+dest_files=[ "res://.import/dsgrload.ogg-089163354e23c40f69b940bf4108cc79.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

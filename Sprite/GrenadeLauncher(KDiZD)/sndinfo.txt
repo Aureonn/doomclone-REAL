@@ -1,0 +1,5 @@
+Weapons/GrenadeFire	DSGRFIRE
+Weapons/GrenadeBounce	DSGRBNCE
+Weapons/GrenadeOpen	DSGROPEN
+Weapons/GrenadeLoad	DSGRLOAD
+Weapons/GrenadeClose	DSGRCLOS

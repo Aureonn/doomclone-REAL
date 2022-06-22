@@ -7,6 +7,7 @@ onready var blood = preload("res://Scenes/Blood.tscn")
 var damage = 6
 var can_shoot = true
 
+
 func _ready():
 	gun_sprite.play("idle")
 
@@ -26,7 +27,7 @@ func make_flash():
 	add_child(f)
 	
 func _process(delta):
-	if Input.is_action_just_pressed("shoot") and can_shoot:
+	if Input.is_action_pressed("shoot") and can_shoot:
 		gun_sprite.play("shoot")
 		make_flash()
 		check_hit()
