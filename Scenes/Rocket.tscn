@@ -34,7 +34,6 @@ script = ExtResource( 7 )
 billboard = 2
 frames = SubResource( 1 )
 animation = "explode"
-frame = 1
 playing = true
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
