@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Scenes/GrenadeLauncher.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/RocketLauncher.gd" type="Script" id=1]
 [ext_resource path="res://Sprite/40mmGrenadeLauncher/SPRITES/rglgb0.png" type="Texture" id=2]
 [ext_resource path="res://Sprite/40mmGrenadeLauncher/SPRITES/rglgc0.png" type="Texture" id=3]
 [ext_resource path="res://Sprite/40mmGrenadeLauncher/SPRITES/rglga0.png" type="Texture" id=4]

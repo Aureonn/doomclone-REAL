@@ -31,9 +31,10 @@ radius = 2.11391
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
 billboard = 2
 frames = SubResource( 1 )
-animation = "explode"
+animation = "rocket"
 playing = true
 
 [node name="CollisionShape" type="CollisionShape" parent="."]

@@ -9,7 +9,7 @@ var mouse_sensitivity = 0.002
 onready var pistol = preload("res://scenes/PISTOL.tscn")
 onready var shotgun = preload ("res://scenes/SHOTGUN.tscn")
 onready var ak47 = preload ("res://scenes/ak47.tscn")
-onready var rocketlauncher = preload ("res://scenes/GrenadeLauncher.tscn")
+onready var rocketlauncher = preload ("res://scenes/RocketLauncher.tscn")
 var current_gun = 0
 onready var carried_guns = [pistol, shotgun, ak47, rocketlauncher]
 
