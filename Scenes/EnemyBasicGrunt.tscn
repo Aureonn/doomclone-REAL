@@ -52,14 +52,14 @@ animations = [ {
 "name": "walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "hit",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 10 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 14 ) ],
 "loop": false,
 "name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "hit",
 "speed": 5.0
 } ]
 

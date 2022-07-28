@@ -9,3 +9,12 @@ func _process(delta):
 	armor.text =  PlayerStats.get_armor()
 	health.text = PlayerStats.get_health()
 
+	if current_gun == "Pistol":
+		ammo.text = PlayerStats.get_pistol_ammo()
+	if current_gun == "Shotgun":
+		ammo.text = PlayerStats.get_shotgun_ammo()
+	if current_gun == "ak47":
+		ammo.text = PlayerStats.get_pistol_ammo()
+	if current_gun == "RocketLauncher":
+		ammo.text = PlayerStats.get_rocket_ammo()
+
