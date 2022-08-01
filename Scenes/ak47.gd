@@ -31,6 +31,7 @@ func _process(delta):
 		gun_sprite.play("shoot")
 		make_flash()
 		check_hit()
+		PlayerStats.change_ak_ammo(-1)
 		can_shoot = false
 		
 		yield (gun_sprite, "animation_finished")

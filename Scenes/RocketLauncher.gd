@@ -16,6 +16,7 @@ func _process(delta):
 		launch_projectile()
 		can_shoot = false
 		yield(gunsprite,"animation_finished")
+		PlayerStats.change_rocket_ammo(-1)
 		can_shoot = true
 		gunsprite.play("idle")
 		

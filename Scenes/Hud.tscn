@@ -28,13 +28,13 @@ rect_min_size = Vector2( 80, 0 )
 mouse_filter = 2
 alignment = 2
 
-[node name="Armor" type="Label" parent="MarginContainer/Stats/Labels"]
+[node name="ArmorLabel" type="Label" parent="MarginContainer/Stats/Labels"]
 margin_top = 528.0
 margin_right = 80.0
 margin_bottom = 562.0
 text = "Armor"
 
-[node name="Health" type="Label" parent="MarginContainer/Stats/Labels"]
+[node name="HealthLabel" type="Label" parent="MarginContainer/Stats/Labels"]
 margin_top = 566.0
 margin_right = 80.0
 margin_bottom = 600.0

@@ -19,7 +19,7 @@ animations = [ {
 "speed": 13.0
 } ]
 
-[node name="ak" type="Spatial"]
+[node name="AK47" type="Spatial"]
 script = ExtResource( 5 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

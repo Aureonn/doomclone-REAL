@@ -6,6 +6,7 @@ onready var ammo = $MarginContainer/Stats/Ammo/AmmoValue
 
 func _process(delta):
 	var current_gun = PlayerStats.current_gun
+	print(current_gun)
 	armor.text =  PlayerStats.get_armor()
 	health.text = PlayerStats.get_health()
 
@@ -13,8 +14,8 @@ func _process(delta):
 		ammo.text = PlayerStats.get_pistol_ammo()
 	if current_gun == "Shotgun":
 		ammo.text = PlayerStats.get_shotgun_ammo()
-	if current_gun == "ak47":
-		ammo.text = PlayerStats.get_pistol_ammo()
+	if current_gun == "AK47":
+		ammo.text = PlayerStats.get_ak_ammo()
 	if current_gun == "RocketLauncher":
 		ammo.text = PlayerStats.get_rocket_ammo()
 
