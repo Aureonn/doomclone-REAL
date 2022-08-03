@@ -2,12 +2,14 @@ extends KinematicBody
 
 onready var nav = get_tree().get_nodes_in_group("NavMesh")[0]
 onready var player = get_tree().get_nodes_in_group("Player")[0]
+onready var ray = $Visual
 
 var path = []
 var path_index = 0
 var speed = 3
 var health = 20
 var move = true
+var searching = false
 
 func _ready():
 	pass 
@@ -55,3 +57,7 @@ func shoot(target):
 func _on_Timer_timeout():
 		find_path(player.global_transform.origin)
 
+
+
+func _on_Aural_body_entered(body):
+	pass # Replace with function body.
