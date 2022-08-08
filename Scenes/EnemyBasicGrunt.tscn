@@ -32,6 +32,21 @@ height = 0.464707
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": false,
+"name": "explode",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "hit",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "idle",
@@ -42,24 +57,9 @@ animations = [ {
 "name": "shoot",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 18 ) ],
-"loop": false,
-"name": "explode",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "hit",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "die",
 "speed": 5.0
 } ]
 
@@ -81,10 +81,9 @@ billboard = 2
 double_sided = false
 frames = SubResource( 2 )
 animation = "walk"
-frame = 1
 playing = true
 
-[node name="RayCast" type="RayCast" parent="."]
+[node name="Visual" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.970706, 0 )
 
 [node name="Timer" type="Timer" parent="."]
