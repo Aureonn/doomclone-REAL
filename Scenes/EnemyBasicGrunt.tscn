@@ -94,5 +94,10 @@ autostart = true
 [node name="CollisionShape" type="CollisionShape" parent="Aural"]
 shape = SubResource( 3 )
 
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Aural" to="." method="_on_Aural_body_entered"]
+[connection signal="timeout" from="ShootTimer" to="." method="_on_ShootTimer_timeout"]
