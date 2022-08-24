@@ -1,0 +1,12 @@
+[remap]
+
+importer="qodot.wad"
+type="Resource"
+valid=false
+
+[deps]
+
+source_file="res://Sprite/AK47 (1)/AK47.wad"
+[params]
+
+palette_file="res://addons/qodot/palette.lmp"
