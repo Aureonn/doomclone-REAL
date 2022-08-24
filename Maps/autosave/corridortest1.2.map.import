@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/corridortest1.2.map-420b473096341836d188fe52bb7d4177.tres"
+
+[deps]
+
+source_file="res://Maps/autosave/corridortest1.2.map"
+dest_files=[ "res://.import/corridortest1.2.map-420b473096341836d188fe52bb7d4177.tres" ]
+
+[params]
+
