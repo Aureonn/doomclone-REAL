@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/doom map1.19.map-7cd1fb1730a358b3a3798513e5a42f35.tres"
+
+[deps]
+
+source_file="res://Maps/autosave/doom map1.19.map"
+dest_files=[ "res://.import/doom map1.19.map-7cd1fb1730a358b3a3798513e5a42f35.tres" ]
+
+[params]
+
